@@ -18,7 +18,8 @@ html {
 
 body {
   height: 100vh;
-  width: 100%;;
+  width: 100%;
+  ;
   background-image: url(imagenes/convertidas/background.webp);
   background-attachment: fixed;
   background-size: cover;
@@ -35,7 +36,9 @@ li {
   list-style: none;
 }
 
-button, input, textarea {
+button,
+input,
+textarea {
   font-family: inherit;
   font-size: 100%;
   line-height: 1;
@@ -62,6 +65,7 @@ button, input, textarea {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.1);
   }
@@ -241,8 +245,7 @@ legend {
   color: var(--trigoClaro);
 }
 
-/* Responsivo */
-@media only screen and (min-width: 320px) and (max-width: 425px) {
+@media only screen and (min-width: 320px) and (max-width: 575px) {
   .encabezado {
     display: flex;
     flex-direction: column;
@@ -260,7 +263,7 @@ legend {
   }
 
   .contenedor {
-    max-width: 300px;
+    max-width: 310px;
   }
 
   .galeria {
@@ -273,7 +276,7 @@ legend {
   }
 
   .galeria__imagen {
-    width: 126px;
+    width: 131px;
     height: 90px;
   }
 
@@ -282,9 +285,9 @@ legend {
   }
 }
 
-@media only screen and (min-width: 428px) and (max-width: 576px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .contenedor {
-    max-width: 410px;
+    max-width: 500px;
   }
 
   .galeria__grid {
@@ -293,7 +296,23 @@ legend {
   }
 
   .galeria__imagen {
-    width: 165px;
-    height: 100px;
+    width: 210px;
+    height: 150px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .contenedor {
+    max-width: 720px;
+  }
+
+  .galeria__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .galeria__imagen {
+    width: 208px;
+    height: 160px;
   }
 }
