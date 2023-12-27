@@ -164,23 +164,6 @@ textarea {
   border: none;
 }
 
-.formulario legend {
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  color: wheat;
-}
-
-legend {
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
-}
-
 .contacto__titulo {
   text-align: center;
   font-size: 2.5rem;
