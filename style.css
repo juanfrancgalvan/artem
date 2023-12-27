@@ -19,7 +19,6 @@ html {
 body {
   height: 100vh;
   width: 100%;
-  ;
   background-image: url(imagenes/convertidas/background.webp);
   background-attachment: fixed;
   background-size: cover;
@@ -204,7 +203,7 @@ legend {
   display: block;
 }
 
-.input-text {
+.entrada {
   width: 100%;
   border: none;
   padding: 1.5rem;
@@ -245,7 +244,7 @@ legend {
   color: var(--trigoClaro);
 }
 
-@media only screen and (min-width: 320px) and (max-width: 575px) {
+@media only screen and (min-width: 320px) and (max-width: 425px) {
   .encabezado {
     display: flex;
     flex-direction: column;
@@ -276,12 +275,32 @@ legend {
   }
 
   .galeria__imagen {
-    width: 131px;
-    height: 90px;
+    width: 100%;
+    height: 100%;
   }
 
   .pie__texto {
     font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 428px) and (max-width: 575px) {
+  .contenedor {
+    max-width: 400px;
+  }
+
+  .galeria {
+    padding: 1rem;
+  }
+
+  .galeria__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .galeria__imagen {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -296,8 +315,8 @@ legend {
   }
 
   .galeria__imagen {
-    width: 210px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -312,7 +331,7 @@ legend {
   }
 
   .galeria__imagen {
-    width: 208px;
-    height: 160px;
+    width: 100%;
+    height: 100%;
   }
 }
