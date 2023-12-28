@@ -117,7 +117,7 @@ textarea {
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   font-size: 1.1rem;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 30px;
   margin-bottom: 5rem;
 }
@@ -227,6 +227,21 @@ textarea {
   color: var(--trigoClaro);
 }
 
+@media only screen and (width <= 992px) {
+  .contenedor {
+    width: 90%;
+  }
+
+  .galeria {
+    padding: 1rem;
+  }
+
+  .galeria__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media only screen and (width <= 576px) {
   .encabezado {
     display: flex;
@@ -263,16 +278,5 @@ textarea {
 
   .pie__texto {
     font-size: 1.1rem;
-  }
-}
-
-@media only screen and (width = 768px) {
-  .contenedor {
-    width: 80%;
-  }
-
-  .galeria__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
   }
 }
