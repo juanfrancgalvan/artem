@@ -19,7 +19,7 @@ html {
 body {
   height: 100vh;
   width: 100%;
-  background-image: url(imagenes/convertidas/background.webp);
+  background-image: url(../build/images/background.webp);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -52,7 +52,7 @@ textarea {
   margin: 0.3rem;
 }
 
-.encabezado__logo {
+.encabezado-logo {
   color: var(--trigo);
   font-weight: 900;
   margin: 1rem;
@@ -70,19 +70,19 @@ textarea {
   }
 }
 
-.barra__lista {
+.barra-lista {
   display: flex;
   flex-direction: row;
 }
 
-.barra__enlace {
+.barra-enlace {
   color: white;
   font-weight: 700;
   margin: 1rem;
   cursor: pointer;
 }
 
-.barra__enlace:hover {
+.barra-enlace:hover {
   color: var(--trigo);
   transition: 0.2s ease-out;
 }
@@ -104,12 +104,12 @@ textarea {
   margin: 6rem 0;
 }
 
-.hero__titulo {
+.hero-titulo {
   font-weight: 900;
   font-size: 4rem;
 }
 
-.hero__texto {
+.hero-texto {
   font-size: 1.2rem;
 }
 
@@ -122,33 +122,33 @@ textarea {
   margin-bottom: 5rem;
 }
 
-.galeria__titulo {
+.galeria-titulo {
   margin: 0.5rem;
   color: white;
 }
 
-.galeria__titulo {
+.galeria-titulo {
   font-size: 2.5rem;
 }
 
-.galeria__grid {
+.galeria-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin-top: 15px;
 }
 
-.galeria__imagen {
+.galeria-imagen {
   width: 100%;
   border-radius: 10px;
   cursor: pointer;
 }
 
-.galeria__imagen--zoom {
+.galeria-imagen--zoom {
   transition: transform 0.2s ease;
 }
 
-.galeria__imagen--zoom:hover {
+.galeria-imagen--zoom:hover {
   transform: scale(1.1);
 }
 
@@ -164,7 +164,7 @@ textarea {
   border: none;
 }
 
-.contacto__titulo {
+.contacto-titulo {
   text-align: center;
   font-size: 2.5rem;
   color: white;
@@ -220,7 +220,7 @@ textarea {
   margin-top: 5rem;
 }
 
-.pie__texto {
+.pie-texto {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 900;
@@ -236,7 +236,7 @@ textarea {
     padding: 1rem;
   }
 
-  .galeria__grid {
+  .galeria-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -248,14 +248,14 @@ textarea {
     flex-direction: column;
   }
 
-  .barra__lista {
+  .barra-lista {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-bottom: 0.5rem;
   }
 
-  .barra__lista li {
+  .barra-lista li {
     margin: 4px 0;
   }
 
@@ -267,16 +267,16 @@ textarea {
     padding: 1rem;
   }
 
-  .galeria__grid {
+  .galeria-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .galeria__imagen {
+  .galeria-imagen {
     width: 100%;
   }
 
-  .pie__texto {
+  .pie-texto {
     font-size: 1.1rem;
   }
 }

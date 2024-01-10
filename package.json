@@ -1,8 +1,8 @@
 {
-  "name": "landing-page",
+  "name": "artepx",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Artepx",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
