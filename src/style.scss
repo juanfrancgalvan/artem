@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
 :root {
-  --trigo: rgb(245, 222, 179);
-  --trigoClaro: rgb(255, 232, 190);
-  --trigoOscuro: rgb(167, 151, 119);
+  --wheat: rgb(245, 222, 179);
+  --lightWheat: rgb(255, 232, 190);
+  --darkWheat: rgb(167, 151, 119);
 }
 
 * {
@@ -31,7 +31,7 @@ a {
   color: white;
 }
 
-.encabezado {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,8 +40,8 @@ a {
   margin: 0.3rem;
 }
 
-.encabezado-logo {
-  color: var(--trigo);
+.header-logo {
+  color: var(--wheat);
   font-weight: 900;
   margin: 1rem;
   cursor: pointer;
@@ -58,19 +58,19 @@ a {
   }
 }
 
-.barra-enlace {
+.nav-link {
   color: white;
   font-weight: 700;
   margin: 1rem;
   cursor: pointer;
 }
 
-.barra-enlace:hover {
-  color: var(--trigo);
+.nav-link:hover {
+  color: var(--wheat);
   transition: 0.2s ease-out;
 }
 
-.contenedor {
+.container {
   width: 60%;
   margin: 0 auto;
 }
@@ -87,16 +87,16 @@ a {
   margin: 6rem 0;
 }
 
-.hero-titulo {
+.hero-title {
   font-weight: 900;
   font-size: 4rem;
 }
 
-.hero-texto {
+.hero-text {
   font-size: 1.2rem;
 }
 
-.galeria {
+.gallery {
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   font-size: 1.1rem;
@@ -105,37 +105,38 @@ a {
   margin-bottom: 5rem;
 }
 
-.galeria-titulo {
+.gallery-title {
+  font-size: 3rem;
+}
+
+.gallery-title,
+.gallery-text {
   margin: 0.5rem;
   color: white;
 }
 
-.galeria-titulo {
-  font-size: 2.5rem;
-}
-
-.galeria-grid {
+.gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin-top: 15px;
 }
 
-.galeria-imagen {
+.gallery-image {
   width: 100%;
   border-radius: 10px;
   cursor: pointer;
 }
 
-.galeria-imagen--zoom {
+.zoom {
   transition: transform 0.2s ease;
 }
 
-.galeria-imagen--zoom:hover {
+.zoom:hover {
   transform: scale(1.1);
 }
 
-.formulario {
+.form {
   background-color: rgba(0, 0, 0, 0.7);
   width: min(40rem, 100%);
   margin: 0 auto;
@@ -143,33 +144,33 @@ a {
   border-radius: 1rem;
 }
 
-.formulario fieldset {
+.form fieldset {
   border: none;
 }
 
-.contacto-titulo {
+.contact-title {
   text-align: center;
   font-size: 2.5rem;
   color: white;
   margin-bottom: 1rem;
 }
 
-.campo {
+.field {
   margin-bottom: 1rem;
 }
 
-.campo textarea {
+.field textarea {
   height: 12rem;
 }
 
-.campo label {
+.field label {
   color: white;
   font-weight: bold;
   margin-bottom: 0.5rem;
   display: block;
 }
 
-.entrada {
+.input-text {
   width: 100%;
   border: none;
   padding: 1.3rem;
@@ -178,7 +179,7 @@ a {
   font-size: 100%;
 }
 
-.boton {
+.buttom {
   background-color: rgb(139, 127, 104);
   color: white;
   padding: 1rem 2rem;
@@ -190,78 +191,78 @@ a {
   cursor: pointer;
 }
 
-.boton:hover {
+.buttom:hover {
   transition: 0.3s ease-in;
   background-color: rgb(167, 151, 119);
 }
 
-.alinear {
+.align {
   display: flex;
   justify-content: center;
 }
 
-.pie {
+.footer {
   padding: 4rem 0;
   background-color: rgba(0, 0, 0, 0.5);
   margin-top: 5rem;
 }
 
-.pie-texto {
+.footer-text {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 900;
-  color: var(--trigoClaro);
+  color: var(--lightWheat);
 }
 
 @media only screen and (width <= 992px) {
-  .contenedor {
+  .container {
     width: 90%;
   }
 
-  .galeria {
+  .gallery {
     padding: 1rem;
   }
 
-  .galeria-grid {
+  .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media only screen and (width <= 576px) {
-  .encabezado {
+  .header {
     flex-direction: column;
   }
 
-  .barra {
+  .nav {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-bottom: 10px;
   }
 
-  .barra-enlace {
+  .nav-link {
     margin: 5px;
   }
 
-  .contenedor {
+  .container {
     width: 90%;
   }
 
-  .galeria {
+  .gallery {
     padding: 1rem;
   }
 
-  .galeria-grid {
+  .gallery-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .formulario {
+  .form {
     padding: 1.5rem;
   }
 
-  .pie-texto {
+  .footer-text {
     font-size: 1.1rem;
   }
 }
