@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
 :root {
-  --wheat: rgb(245, 222, 179);
-  --lightWheat: rgb(255, 232, 190);
-  --darkWheat: rgb(167, 151, 119);
+  --white: #ffffff;
+  --wheat: #f5deb3;
+  --light-wheat: #ffe8be;
+  --dark-wheat: #a79777;
 }
 
 * {
@@ -28,7 +29,7 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
 .header {
@@ -59,7 +60,7 @@ a {
 }
 
 .nav-link {
-  color: white;
+  color: var(--white);
   font-weight: 700;
   margin: 1rem;
   cursor: pointer;
@@ -83,7 +84,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--white);
   margin: 9rem 0;
 }
 
@@ -112,7 +113,7 @@ a {
 .gallery-title,
 .gallery-text {
   margin: 0.5rem;
-  color: white;
+  color: var(--white);
 }
 
 .gallery-grid {
@@ -151,7 +152,7 @@ a {
 .contact-title {
   text-align: center;
   font-size: 2.5rem;
-  color: white;
+  color: var(--white);
   margin-bottom: 1rem;
 }
 
@@ -164,7 +165,7 @@ a {
 }
 
 .field label {
-  color: white;
+  color: var(--white);
   font-weight: bold;
   margin-bottom: 0.5rem;
   display: block;
@@ -180,8 +181,8 @@ a {
 }
 
 .buttom {
-  background-color: rgb(139, 127, 104);
-  color: white;
+  background-color: var(--dark-wheat);
+  color: var(--white);
   padding: 1rem 2rem;
   font-size: 1.5rem;
   font-weight: bold;
@@ -191,10 +192,10 @@ a {
   cursor: pointer;
 }
 
-.buttom:hover {
-  transition: 0.3s ease-in;
-  background-color: rgb(167, 151, 119);
-}
+// .buttom:hover {
+//   transition: 0.3s ease-in;
+//   background-color: #a79777;
+// }
 
 .align {
   display: flex;
@@ -211,7 +212,7 @@ a {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 900;
-  color: var(--lightWheat);
+  color: var(--light-wheat);
 }
 
 @media only screen and (width <= 992px) {
