@@ -7,6 +7,10 @@
   --dark-wheat: #a79777;
 }
 
+$wheat: #f5deb3;
+$light-wheat: #ffe8be;
+$dark-wheat: #a79777;
+
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +34,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--white);
+  color: white;
 }
 
 .header {
@@ -42,7 +46,7 @@ a {
   margin: 0.3rem;
 
   h1 {
-    color: var(--wheat);
+    color: $wheat;
     font-weight: 900;
     margin: 1rem;
     cursor: pointer;
@@ -62,13 +66,13 @@ a {
 
 .nav {
   a {
-    color: var(--white);
+    color: white;
     font-weight: 700;
     margin: 1rem;
     cursor: pointer;
 
     &:hover {
-      color: var(--wheat);
+      color: $wheat;
       transition: 0.2s ease-out;
     }
   }
@@ -87,7 +91,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--white);
+  color: white;
   margin: 9rem 0;
 
   h2 {
@@ -115,7 +119,7 @@ a {
   h2,
   p {
     margin: 0.5rem;
-    color: var(--white);
+    color: white;
   }
 }
 
@@ -144,7 +148,7 @@ a {
   h2 {
     text-align: center;
     font-size: 2.5rem;
-    color: var(--white);
+    color: white;
     margin-bottom: 1rem;
   }
 }
@@ -165,7 +169,7 @@ a {
   }
 
   label {
-    color: var(--white);
+    color: white;
     font-weight: bold;
     margin-bottom: 0.5rem;
     display: block;
@@ -182,8 +186,8 @@ a {
 }
 
 .buttom {
-  background-color: var(--dark-wheat);
-  color: var(--white);
+  background-color: $dark-wheat;
+  color: white;
   padding: 1rem 2rem;
   font-size: 1.5rem;
   font-weight: bold;
@@ -193,8 +197,8 @@ a {
   cursor: pointer;
 
   &:hover {
-    transition: 0.3s ease-in;
-    background-color: #c5b38e;
+    transition: 0.3s ease;
+    background-color: #bea674;
   }
 }
 
@@ -212,7 +216,7 @@ a {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 900;
-    color: var(--light-wheat);
+    color: $light-wheat;
   }
 }
 
