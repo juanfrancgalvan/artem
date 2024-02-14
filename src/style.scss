@@ -10,6 +10,7 @@
 * {
   margin: 0;
   padding: 0;
+  border: 0;
   box-sizing: border-box;
 }
 
@@ -39,14 +40,14 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50px;
   margin: 0.3rem;
-}
 
-.header-logo {
-  color: var(--wheat);
-  font-weight: 900;
-  margin: 1rem;
-  cursor: pointer;
-  animation: logo ease-in 1s infinite alternate;
+  h1 {
+    color: var(--wheat);
+    font-weight: 900;
+    margin: 1rem;
+    cursor: pointer;
+    animation: logo ease-in 1s infinite alternate;
+  }
 }
 
 @keyframes logo {
@@ -59,16 +60,18 @@ a {
   }
 }
 
-.nav-link {
-  color: var(--white);
-  font-weight: 700;
-  margin: 1rem;
-  cursor: pointer;
-}
+.nav {
+  a {
+    color: var(--white);
+    font-weight: 700;
+    margin: 1rem;
+    cursor: pointer;
 
-.nav-link:hover {
-  color: var(--wheat);
-  transition: 0.2s ease-out;
+    &:hover {
+      color: var(--wheat);
+      transition: 0.2s ease-out;
+    }
+  }
 }
 
 .container {
@@ -86,15 +89,15 @@ a {
   justify-content: center;
   color: var(--white);
   margin: 9rem 0;
-}
 
-.hero-title {
-  font-weight: 900;
-  font-size: 4rem;
-}
+  h2 {
+    font-weight: 900;
+    font-size: 4rem;
+  }
 
-.hero-text {
-  font-size: 1.2rem;
+  p {
+    font-size: 1.2rem;
+  }
 }
 
 .gallery {
@@ -104,16 +107,16 @@ a {
   padding: 1.5rem;
   border-radius: 30px;
   margin-bottom: 9rem;
-}
 
-.gallery-title {
-  font-size: 3rem;
-}
+  h2 {
+    font-size: 3rem;
+  }
 
-.gallery-title,
-.gallery-text {
-  margin: 0.5rem;
-  color: var(--white);
+  h2,
+  p {
+    margin: 0.5rem;
+    color: var(--white);
+  }
 }
 
 .gallery-grid {
@@ -121,20 +124,29 @@ a {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin-top: 15px;
-}
 
-.gallery-image {
-  width: 100%;
-  border-radius: 10px;
-  cursor: pointer;
+  img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+  }
 }
 
 .zoom {
   transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
-.zoom:hover {
-  transform: scale(1.1);
+.contact {
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+  }
 }
 
 .form {
@@ -145,30 +157,19 @@ a {
   border-radius: 1rem;
 }
 
-.form fieldset {
-  border: none;
-}
-
-.contact-title {
-  text-align: center;
-  font-size: 2.5rem;
-  color: var(--white);
-  margin-bottom: 1rem;
-}
-
 .field {
   margin-bottom: 1rem;
-}
 
-.field textarea {
-  height: 12rem;
-}
+  textarea {
+    height: 12rem;
+  }
 
-.field label {
-  color: var(--white);
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  display: block;
+  label {
+    color: var(--white);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
 }
 
 .input-text {
@@ -190,12 +191,12 @@ a {
   border: none;
   line-height: 1;
   cursor: pointer;
-}
 
-// .buttom:hover {
-//   transition: 0.3s ease-in;
-//   background-color: #a79777;
-// }
+  &:hover {
+    transition: 0.3s ease-in;
+    background-color: #c5b38e;
+  }
+}
 
 .align {
   display: flex;
@@ -206,16 +207,16 @@ a {
   padding: 4rem 0;
   background-color: rgba(0, 0, 0, 0.5);
   margin-top: 5rem;
+
+  p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--light-wheat);
+  }
 }
 
-.footer-text {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: var(--light-wheat);
-}
-
-@media only screen and (width <= 992px) {
+@media only screen and (width <=992px) {
   .container {
     width: 90%;
   }
@@ -230,7 +231,7 @@ a {
   }
 }
 
-@media only screen and (width <= 576px) {
+@media only screen and (width <=576px) {
   .header {
     flex-direction: column;
   }
@@ -240,10 +241,10 @@ a {
     flex-direction: column;
     text-align: center;
     margin-bottom: 10px;
-  }
 
-  .nav-link {
-    margin: 5px;
+    a {
+      margin: 5px;
+    }
   }
 
   .container {
@@ -257,13 +258,16 @@ a {
   .gallery-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
   }
 
   .form {
     padding: 1.5rem;
   }
 
-  .footer-text {
-    font-size: 1.1rem;
+  .footer {
+    p {
+      font-size: 1.1rem;
+    }
   }
 }
