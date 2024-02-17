@@ -1,7 +1,7 @@
 {
-  "name": "artepx",
+  "name": "artem",
   "version": "1.0.0",
-  "description": "Artepx",
+  "description": "Artem",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
