@@ -1,0 +1,14 @@
+@use '../base/variables' as v;
+
+.footer {
+  padding: 3rem 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 5rem;
+
+  p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: v.$light-wheat;
+  }
+}

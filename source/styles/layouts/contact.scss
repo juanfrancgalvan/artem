@@ -1,0 +1,64 @@
+@use '../base/variables' as v;
+
+.contact {
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: v.$white;
+    margin-bottom: 1rem;
+  }
+}
+
+.form {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: min(40rem, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.field {
+  margin-bottom: 1rem;
+
+  textarea {
+    height: 12rem;
+  }
+
+  label {
+    color: v.$white;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+}
+
+.input-text {
+  width: 100%;
+  border: none;
+  padding: 1.3rem;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.button {
+  background-color: v.$dark-wheat;
+  color: v.$white;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: none;
+  line-height: 1;
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.3s ease;
+    transform: scale(1.1);
+  }
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+}

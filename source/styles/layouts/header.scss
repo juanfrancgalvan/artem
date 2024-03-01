@@ -1,0 +1,42 @@
+@use '../base/variables' as v;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  margin: 0.3rem;
+
+  h1 {
+    color: v.$wheat;
+    font-weight: 900;
+    margin: 1rem;
+    cursor: pointer;
+    animation: logo ease-in 1s infinite alternate;
+  }
+}
+
+@keyframes logo {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.nav {
+  a {
+    color: v.$white;
+    font-weight: 700;
+    margin: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      color: v.$wheat;
+      transition: 0.2s ease-out;
+    }
+  }
+}

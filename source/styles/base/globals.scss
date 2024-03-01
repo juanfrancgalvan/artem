@@ -1,0 +1,34 @@
+@use '../base/variables' as v;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url('/build/assets/images/background.webp');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: v.$white;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
