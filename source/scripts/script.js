@@ -1,28 +1,49 @@
 const pictures = [
   {
-    "name": "gallery1",
-    "image": "/build/assets/images/gallery1.webp"
+    "name": "Abstract",
+    "image": "/build/assets/images/paint1.webp",
+    "original": "/source/assets/images/paint1.jpg"
   },
   {
-    "name": "gallery2",
-    "image": "/build/assets/images/gallery2.webp"
+    "name": "Texture",
+    "image": "/build/assets/images/paint2.webp",
+    "original": "/source/assets/images/paint2.jpg"
   },
   {
-    "name": "gallery3",
-    "image": "/build/assets/images/gallery3.webp"
+    "name": "Eyes",
+    "image": "/build/assets/images/paint3.webp",
+    "original": "/source/assets/images/paint3.jpg"
   },
   {
-    "name": "gallery4",
-    "image": "/build/assets/images/gallery4.webp"
+    "name": "Archeology",
+    "image": "/build/assets/images/paint4.webp",
+    "original": "/source/assets/images/paint4.jpg"
   },
   {
-    "name": "gallery5",
-    "image": "/build/assets/images/gallery5.webp"
+    "name": "Angel",
+    "image": "/build/assets/images/paint5.webp",
+    "original": "/source/assets/images/paint5.jpg"
   },
   {
-    "name": "gallery6",
-    "image": "/build/assets/images/gallery6.webp"
+    "name": "Field",
+    "image": "/build/assets/images/paint6.webp",
+    "original": "/source/assets/images/paint6.jpg"
   },
+  {
+    "name": "Religion",
+    "image": "/build/assets/images/paint7.webp",
+    "original": "/source/assets/images/paint7.jpg"
+  },
+  {
+    "name": "Peace",
+    "image": "/build/assets/images/paint8.webp",
+    "original": "/source/assets/images/paint8.jpg"
+  },
+  {
+    "name": "War",
+    "image": "/build/assets/images/paint9.webp",
+    "original": "/source/assets/images/paint9.jpg"
+  }
 ]
 
 function createGallery() {
@@ -30,7 +51,7 @@ function createGallery() {
   pictures.forEach(picture => {
     const image = document.createElement('img')
     image.src = picture.image
-    image.alt = picture.name
+    image.alt = `${picture.name} Painting`
     image.loading = "lazy"
     gallery.appendChild(image)
 
@@ -39,7 +60,7 @@ function createGallery() {
       const overlay = document.createElement('div')
       overlay.classList.add('overlay')
       const image = document.createElement('img')
-      image.src = picture.image
+      image.src = picture.original
       image.alt = picture.name
       image.loading = "lazy"
       body.appendChild(overlay)
