@@ -23,6 +23,7 @@ function css(done) {
 function js(done) {
   src('source/scripts/**/*.js')
     .pipe(sourcemaps.init())
+    .pipe(plumber())
     .pipe(terser())
     .pipe(sourcemaps.write('.'))
     .pipe(dest('build/scripts'))
@@ -30,9 +31,9 @@ function js(done) {
 }
 
 function images(done) {
-  const optimization = [imagemin.mozjpeg({quality: 10}), imagemin.optipng({optimizationLevel: 5})]
+  // const optimization = [imagemin.mozjpeg({quality: 10}), imagemin.optipng({optimizationLevel: 5})]
   src('source/assets/images/**/*')
-    .pipe(imagemin(optimization))
+    .pipe(imagemin())
     .pipe(webp())
     .pipe(dest('build/assets/images'))
   done()

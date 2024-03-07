@@ -1,4 +1,4 @@
-@use '../base/variables' as v;
+@use 'variables.scss' as v;
 
 .gallery {
   background-color: rgba(0, 0, 0, .7);
@@ -29,13 +29,28 @@
     width: 100%;
     border-radius: 10px;
     cursor: pointer;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
-.zoom {
-  transition: transform 0.2s ease;
+.overlay {
+  align-items: center;
+  background-color: rgba(0, 0, 0, .9);
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
 
-  &:hover {
-    transform: scale(1.1);
+  img {
+    display: block;
+    width: 70%;
   }
 }
