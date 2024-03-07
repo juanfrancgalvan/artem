@@ -31,6 +31,7 @@ function createGallery() {
     const image = document.createElement('img')
     image.src = picture.image
     image.alt = picture.name
+    image.loading = "lazy"
     gallery.appendChild(image)
 
     image.addEventListener('click', function showImage() {
@@ -40,6 +41,7 @@ function createGallery() {
       const image = document.createElement('img')
       image.src = picture.image
       image.alt = picture.name
+      image.loading = "lazy"
       body.appendChild(overlay)
       overlay.appendChild(image)
 
