@@ -43,6 +43,21 @@ const pictures = [
     "name": "War",
     "image": "/build/assets/images/paint9.webp",
     "original": "/source/assets/images/paint9.jpg"
+  },
+  {
+    "name": "Nature",
+    "image": "/build/assets/images/paint10.webp",
+    "original": "/source/assets/images/paint10.jpg"
+  },
+  {
+    "name": "Mountain",
+    "image": "/build/assets/images/paint11.webp",
+    "original": "/source/assets/images/paint11.jpg"
+  },
+  {
+    "name": "Pray",
+    "image": "/build/assets/images/paint12.webp",
+    "original": "/source/assets/images/paint12.jpg"
   }
 ]
 
@@ -66,7 +81,7 @@ function createGallery() {
       body.appendChild(overlay)
       overlay.appendChild(image)
 
-      image.addEventListener('click', function closeImage() {
+      overlay.addEventListener('click', function closeImage() {
         overlay.remove()
       })
     })
