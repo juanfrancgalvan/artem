@@ -12,7 +12,7 @@ function createGallery() {
       const overlay = document.createElement('div')
       overlay.classList.add('overlay')
       const image = document.createElement('img')
-      image.src = picture.original
+      image.src = picture.image
       image.alt = picture.name
       image.loading = "lazy"
       body.appendChild(overlay)
