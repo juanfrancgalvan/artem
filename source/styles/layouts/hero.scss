@@ -2,14 +2,14 @@
 
 .hero {
   position: relative;
-  // width: 100%;
-  // height: 60%;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: v.$white;
-  padding: 28rem 0;
+  // padding: 30rem 0;
 
   h2 {
     font-weight: 900;
