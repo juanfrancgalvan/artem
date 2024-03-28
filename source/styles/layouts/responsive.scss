@@ -16,6 +16,10 @@
 @media only screen and (width <=576px) {
   .header {
     flex-direction: column;
+
+    h1 {
+      margin: 10px;
+    }
   }
 
   .nav {
@@ -25,7 +29,7 @@
     margin-bottom: 10px;
 
     a {
-      margin: 5px;
+      margin: 10px;
     }
   }
 

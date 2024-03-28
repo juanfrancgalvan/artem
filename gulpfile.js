@@ -50,4 +50,3 @@ exports.js = js
 exports.images = images
 
 exports.dev = parallel(css, js, dev)
-exports.convert = parallel(images)

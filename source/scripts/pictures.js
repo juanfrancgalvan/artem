@@ -1,62 +1,62 @@
 const pictures = [
   {
     "name": "Abstract",
-    "image": "/build/assets/images/paint1.webp",
-    "original": "/source/assets/images/paint1.jpg"
+    "original": "/build/assets/images/original/paint1.webp",
+    "thumb": "/build/assets/images/thumb/paint1.webp"
   },
   {
     "name": "Texture",
-    "image": "/build/assets/images/paint2.webp",
-    "original": "/source/assets/images/paint2.jpg"
+    "original": "/build/assets/images/original/paint2.webp",
+    "thumb": "/build/assets/images/thumb/paint2.webp"
   },
   {
     "name": "Eyes",
-    "image": "/build/assets/images/paint3.webp",
-    "original": "/source/assets/images/paint3.jpg"
+    "original": "/build/assets/images/original/paint3.webp",
+    "thumb": "/build/assets/images/thumb/paint3.webp"
   },
   {
     "name": "Archeology",
-    "image": "/build/assets/images/paint4.webp",
-    "original": "/source/assets/images/paint4.jpg"
+    "original": "/build/assets/images/original/paint4.webp",
+    "thumb": "/build/assets/images/thumb/paint4.webp"
   },
   {
     "name": "Angel",
-    "image": "/build/assets/images/paint5.webp",
-    "original": "/source/assets/images/paint5.jpg"
+    "original": "/build/assets/images/original/paint5.webp",
+    "thumb": "/build/assets/images/thumb/paint5.webp"
   },
   {
     "name": "Field",
-    "image": "/build/assets/images/paint6.webp",
-    "original": "/source/assets/images/paint6.jpg"
+    "original": "/build/assets/images/original/paint6.webp",
+    "thumb": "/build/assets/images/thumb/paint6.webp"
   },
   {
     "name": "Religion",
-    "image": "/build/assets/images/paint7.webp",
-    "original": "/source/assets/images/paint7.jpg"
+    "original": "/build/assets/images/original/paint7.webp",
+    "thumb": "/build/assets/images/thumb/paint7.webp"
   },
   {
     "name": "Peace",
-    "image": "/build/assets/images/paint8.webp",
-    "original": "/source/assets/images/paint8.jpg"
+    "original": "/build/assets/images/original/paint8.webp",
+    "thumb": "/build/assets/images/thumb/paint8.webp"
   },
   {
     "name": "War",
-    "image": "/build/assets/images/paint9.webp",
-    "original": "/source/assets/images/paint9.jpg"
+    "original": "/build/assets/images/original/paint9.webp",
+    "thumb": "/build/assets/images/thumb/paint9.webp"
   },
   {
     "name": "Nature",
-    "image": "/build/assets/images/paint10.webp",
-    "original": "/source/assets/images/paint10.jpg"
+    "original": "/build/assets/images/original/paint10.webp",
+    "thumb": "/build/assets/images/thumb/paint10.webp"
   },
   {
     "name": "Mountain",
-    "image": "/build/assets/images/paint11.webp",
-    "original": "/source/assets/images/paint11.jpg"
+    "original": "/build/assets/images/original/paint11.webp",
+    "thumb": "/build/assets/images/thumb/paint11.webp"
   },
   {
     "name": "Pray",
-    "image": "/build/assets/images/paint12.webp",
-    "original": "/source/assets/images/paint12.jpg"
+    "original": "/build/assets/images/original/paint12.webp",
+    "thumb": "/build/assets/images/thumb/paint12.webp"
   }
 ]
