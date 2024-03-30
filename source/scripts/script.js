@@ -2,7 +2,7 @@ function createGallery() {
   const gallery = document.querySelector('.gallery-grid')
   pictures.forEach(picture => {
     const image = document.createElement('img')
-    image.src = picture.thumb
+    image.src = picture.image
     image.alt = `${picture.name} Painting`
     image.width = '300'
     image.height = '200'
@@ -14,7 +14,7 @@ function createGallery() {
       const overlay = document.createElement('div')
       overlay.classList.add('overlay')
       const image = document.createElement('img')
-      image.src = picture.original
+      image.src = picture.image
       image.alt = picture.name
       image.loading = "lazy"
       body.appendChild(overlay)

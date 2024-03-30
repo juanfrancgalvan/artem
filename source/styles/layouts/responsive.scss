@@ -11,6 +11,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .overlay img {
+    width: 100%;
+  }
+
+  .form {
+    width: min(30rem,100%);
+  }
 }
 
 @media only screen and (width <=576px) {
@@ -47,17 +55,11 @@
     gap: 0.5rem;
   }
 
-  .overlay img {
-    width: 100%;
-  }
-
   .form {
     padding: 1.5rem;
   }
 
-  .footer {
-    p {
-      font-size: 1.1rem;
-    }
+  .input-text {
+    padding: 1rem;
   }
 }
