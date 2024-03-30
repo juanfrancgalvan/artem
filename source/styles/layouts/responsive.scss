@@ -1,4 +1,8 @@
 @media only screen and (width <=992px) {
+  body {
+    background-attachment: scroll;
+  }
+
   .container {
     width: 90%;
   }
@@ -61,5 +65,11 @@
 
   .input-text {
     padding: 1rem;
+  }
+
+  .footer {
+    p {
+      font-size: 1rem;
+    }
   }
 }
