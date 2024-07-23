@@ -31,8 +31,9 @@ function js(done) {
 }
 
 function images(done) {
+  const optimization = [imagemin.mozjpeg({quality: 20}), imagemin.optipng({optimizationLevel: 5})]
   src('source/assets/images/*')
-    .pipe(imagemin())
+    .pipe(imagemin(optimization))
     .pipe(webp())
     .pipe(dest('build/assets/images'))
   done()
