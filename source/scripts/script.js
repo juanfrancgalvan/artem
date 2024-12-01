@@ -1,4 +1,10 @@
-function createGallery() {
+fetch('source/scripts/pictures.json')
+.then(response => response.json())
+.then(data => {
+  createGallery(data)
+})
+
+function createGallery(pictures) {
   const gallery = document.querySelector('.gallery-grid')
   pictures.forEach(picture => {
     const image = document.createElement('img')
@@ -26,4 +32,3 @@ function createGallery() {
     })
   })
 }
-createGallery()

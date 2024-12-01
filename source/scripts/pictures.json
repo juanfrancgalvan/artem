@@ -1,4 +1,4 @@
-const pictures = [
+[
   {
     "name": "Abstract",
     "image": "/build/assets/images/paint1.webp"
