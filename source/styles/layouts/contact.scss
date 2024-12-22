@@ -10,7 +10,7 @@
 }
 
 .form {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.1);
   width: min(40rem, 100%);
   margin: 0 auto;
   padding: 2rem;
@@ -47,14 +47,14 @@
   padding: 1rem 2rem;
   font-size: 1.2rem;
   font-weight: bold;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   border: none;
   line-height: 1;
   cursor: pointer;
+  transition: transform 0.5s ease;
 
   &:hover {
-    transition: 0.3s ease;
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
 

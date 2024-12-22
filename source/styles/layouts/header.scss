@@ -6,13 +6,18 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50px;
-  margin: 0.3rem;
+  margin: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
 
-  h1 {
-    color: v.$wheat;
-    font-weight: 900;
+  .logo {
+    filter: invert(100%);
+    width: 2rem;
     margin: 1rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 
     &:hover {
       transform: scale(1.1);
@@ -25,11 +30,11 @@
     color: v.$white;
     font-weight: 700;
     margin: 1rem;
-    cursor: pointer;
+    transition: color 0.4s ease-out;
+
 
     &:hover {
       color: v.$wheat;
-      transition: 0.2s ease-out;
     }
   }
 }

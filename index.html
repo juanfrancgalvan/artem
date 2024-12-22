@@ -14,12 +14,13 @@
   <link rel="stylesheet" href="build/styles/style.css">
   <link rel="preload" href="build/assets/images/background.webp" as="image" type="image/webp">
   <script src="build/scripts/script.js" defer></script>
+  <script src="build/scripts/scrollreveal.min.js"></script>
   <title>Artem</title>
 </head>
 <body>
   <header class="header">
     <a href="index.html">
-      <h1>Artem</h1>
+      <img src="build/assets/images/logo.webp" alt="Logo" width="300" height="100" loading="lazy" class="logo">
     </a>
     <nav class="nav">
       <a href="#gallery" aria-label="Gallery">Gallery</a>
@@ -27,8 +28,10 @@
     </nav>
   </header>
   <section class="hero">
-    <h2>SEO Art</h2>
-    <p>Lorem ipsum dolor sit amet.</p>
+    <div class="hero-shadow">
+      <h2>SEO Art</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
   </section>
   <main class="container">
     <section id="gallery" class="gallery">
@@ -37,7 +40,7 @@
       <div class="gallery-grid"></div>
     </section>
     <section id="contact" class="contact">
-      <h2>Contact</h2>
+      <h2>Contact me.</h2>
       <form class="form">
         <fieldset>
           <div>

@@ -21,6 +21,7 @@
     "gulp-terser-js": "^5.2.2",
     "gulp-webp": "^4.0.1",
     "postcss": "^8.4.28",
-    "sass": "^1.65.1"
+    "sass": "^1.65.1",
+    "scrollreveal": "^4.0.9"
   }
 }
