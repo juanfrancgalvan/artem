@@ -2,12 +2,13 @@
 
 .hero {
   background-image: url('/build/images/background.webp');
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 50rem;
   margin-bottom: 5rem;
-  box-shadow: 0rem 0.1rem 5rem #000000;
+  box-shadow: 0rem 0.1rem 0.1rem #000000;
 }
 
 .hero-shadow {
@@ -15,7 +16,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   color: v.$light-wheat;
   width: 100%;
   height: 100%;

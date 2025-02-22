@@ -1,25 +1,25 @@
 const { src, dest, watch, parallel } = require('gulp')
-const sass = require('gulp-sass')(require('sass'))
-const plumber = require('gulp-plumber')
-const autoprefixer = require('autoprefixer')
-const cssnano = require('cssnano')
+const scss = require('gulp-sass')(require('sass'))
 const postcss = require('gulp-postcss')
 const sourcemaps = require('gulp-sourcemaps')
+const plumber = require('gulp-plumber')
+const terser = require('gulp-terser')
 const imagemin = require('gulp-imagemin')
 const webp = require('gulp-webp')
-const terser = require('gulp-terser-js')
+const autoprefixer = require('autoprefixer')
+const cssnano = require('cssnano')
 
-function css() {
+function styles() {
   return src('source/styles/style.scss')
     .pipe(sourcemaps.init())
+    .pipe(scss())
     .pipe(plumber())
-    .pipe(sass())
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(sourcemaps.write('.'))
     .pipe(dest('build/styles'))
 }
 
-function js() {
+function scripts() {
   return src('source/scripts/*.js')
     .pipe(sourcemaps.init())
     .pipe(plumber())
@@ -29,7 +29,7 @@ function js() {
 }
 
 function images() {
-  const optimization = [imagemin.mozjpeg({quality: 20}), imagemin.optipng({optimizationLevel: 5})]
+  const optimization = [imagemin.mozjpeg({ quality: 20 }), imagemin.optipng({ optimizationLevel: 5 })]
   return src('source/images/*')
     .pipe(imagemin(optimization))
     .pipe(webp())
@@ -37,12 +37,11 @@ function images() {
 }
 
 function watchFiles() {
-  watch("source/styles/**/*.scss", css)
-  watch("source/scripts/**/*.js", js)
+  watch("source/styles/**/*.scss", styles)
+  watch("source/scripts/**/*.js", scripts)
 }
 
-exports.css = css
-exports.js = js
+exports.styles = styles
+exports.scripts = scripts
 exports.images = images
-
-exports.default = parallel(css, js, watchFiles)
+exports.default = parallel(styles, scripts, watchFiles)
