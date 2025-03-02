@@ -4,9 +4,18 @@ fetch('source/scripts/pictures.json')
   createGallery(data)
 })
 
+const body = document.querySelector('body')
+const menu = document.querySelector('.menu')
+const nav = document.querySelector('.nav')
+const gallery = document.querySelector('.gallery-grid')
+const links = document.querySelectorAll('.nav a')
+
+function showMenu() { nav.classList.toggle('show') }
+menu.addEventListener('click', showMenu)
+for (let link of links) { link.addEventListener('click', showMenu) }
+
 function createGallery(pictures) {
-  const gallery = document.querySelector('.gallery-grid')
-  pictures.forEach(picture => {
+  for (let picture of pictures) {
     const image = document.createElement('img')
     image.src = picture.image
     image.alt = `${picture.name} Painting`
@@ -14,23 +23,20 @@ function createGallery(pictures) {
     image.height = '200'
     image.loading = "lazy"
     gallery.appendChild(image)
-
     image.addEventListener('click', function showImage() {
-      const body = document.querySelector('body')
       const overlay = document.createElement('div')
-      overlay.classList.add('overlay')
       const image = document.createElement('img')
+      overlay.classList.add('overlay')
       image.src = picture.image
-      image.alt = picture.name
+      image.alt = `${picture.name} Painting`
+      image.width = '300'
+      image.height = '200'
       image.loading = "lazy"
       body.appendChild(overlay)
       overlay.appendChild(image)
-
-      overlay.addEventListener('click', function closeImage() {
-        overlay.remove()
-      })
+      overlay.addEventListener('click', function closeImage() { overlay.remove() })
     })
-  })
+  }
 }
 
 window.sr = ScrollReveal()

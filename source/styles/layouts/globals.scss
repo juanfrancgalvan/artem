@@ -1,6 +1,12 @@
 @use 'variables.scss' as v;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('/build/fonts/Roboto-Regular.ttf'), url('/build/fonts/Roboto-SemiBold.ttf');
+}
 
 * {
   margin: 0;

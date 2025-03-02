@@ -24,19 +24,35 @@
 @media only screen and (width <=576px) {
   .header {
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+    }
 
     .logo {
       width: 3rem;
     }
+
+    .menu {
+      display: flex;
+    }
   }
 
   .nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 10px;
+    display: none;
+
+    &.show {
+      display: flex;
+      flex-direction: column;
+    }
 
     a {
+      text-align: center;
       margin: 10px;
     }
   }

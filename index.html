@@ -7,8 +7,6 @@
   <meta name="keywords" content="art, artists, gallery, paintings">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com" as="font">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin as="font">
   <link rel="shortcut icon" href="build/images/favicon.webp" type="image/webp">
   <link rel="preload" href="build/styles/style.css" as="style">
   <link rel="stylesheet" href="build/styles/style.css">
@@ -19,9 +17,12 @@
 </head>
 <body>
   <header class="header">
-    <a href="index.html">
-      <img src="build/images/logo.webp" alt="Logo" width="300" height="100" loading="lazy" class="logo">
-    </a>
+    <div>
+      <a href="index.html">
+        <img src="build/images/logo.webp" alt="Logo" width="300" height="100" loading="lazy" class="logo">
+      </a>
+      <img src="source/images/bars.svg" alt="Bars" width="30" height="30" loading="lazy" class="menu">
+    </div>
     <nav class="nav">
       <a href="#gallery" aria-label="Gallery">Gallery</a>
       <a href="#contact" aria-label="Contact">Contact</a>
