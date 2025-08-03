@@ -40,7 +40,7 @@ function createGallery(pictures) {
 }
 
 window.sr = ScrollReveal()
-sr.reveal('header', { origin: 'top', distance: '80px', duration: 2000 })
+sr.reveal('header', { origin: 'top', distance: '40px', duration: 2000 })
 sr.reveal('.hero-shadow', { duration: 800 });
 sr.reveal('.contact', { origin: 'bottom', distance: '100px', duration: 2000 });
 sr.reveal('.footer', { delay: 1000 });
